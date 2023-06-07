@@ -3,7 +3,7 @@ developed by Joshua Kellogg
 This is a stopwatch. It's very straightforward, so this file will mostly be used to keep track of planned future features.
 
 UP NEXT:
--I like the minimal look but it is a *little bit* ugly. I would like to make it fancier and possibly add support for color theming.
-FUTURE:
 -Keep track of fastest and slowest laps.
+FUTURE:
 -Possibly add other "normal web app clock" features? Like a timer? The sky is the limit, I suppose.
+-It can always look sexier.

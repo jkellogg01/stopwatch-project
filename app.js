@@ -65,11 +65,13 @@ function renderLaps() {
   let HTML = ''
   laps.forEach((lap) => {
     HTML += `
-    <div class="lap-name">
-      ${lap.name}
-    </div>
-    <div class="lap-time">
-      ${timeFormat(lap.interval)}
+    <div class="lap">
+      <div class="lap-name">
+        ${lap.name}
+      </div>
+      <div class="lap-time">
+        ${timeFormat(lap.interval)}
+      </div>
     </div>`
   })
   document.querySelector('.laps').innerHTML = HTML;
