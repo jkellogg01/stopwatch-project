@@ -28,12 +28,17 @@ lapResetButtonElement.addEventListener('click', () => {
     renderLaps();
   } else {
     const currentLap = laps.length + 1
-    //const prevLapTime = laps[laps.length - 1].time
+    const prevLap = laps[laps.length - 1] || {
+      name: 'lap 0',
+      time: 0
+    }
+    //console.log(prevLap)
     let lap = {
       name: `lap ${currentLap}`,
-      time,
-      //interval: timeFormat(time = prevLapTime)
+      interval: time - prevLap.time,
+      time
     }
+    //console.log(lap)
     laps.push(lap)
     renderLaps()
   }
@@ -64,7 +69,7 @@ function renderLaps() {
       ${lap.name}
     </div>
     <div class="lap-time">
-      ${timeFormat(lap.time)}
+      ${timeFormat(lap.interval)}
     </div>`
   })
   document.querySelector('.laps').innerHTML = HTML;

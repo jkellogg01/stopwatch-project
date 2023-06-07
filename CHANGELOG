@@ -1,2 +1,4 @@
-6 JUN 2023 - 8:26 - Version 2, I suppose?
+6 JUN 2023 - 20:26 - Version 2, I suppose?
 - The stopwatch works now.
+6 JUN 2023 - 20:46 - Version 3
+- Laps now display how long the lap was instead of the time at which they ended, as you might expect from a stopwatch.
