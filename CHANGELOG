@@ -9,3 +9,4 @@
 07 JUN 2023 - 00:06 - Version 4a
 - Made a change that will hopefully resolve the safari display issues. I am tired and don't have safari on the machine I'm working on so I'm going to bed and I'll find out if the problem has been resolved tomorrow.
 - It still doesn't work on safari. I'll do some research tomorrow but if by some cosmic grace you're reading this and know why this doesn't work on safari at the moment I would greatly appreciate your input.
+- To clarify, the issue is that the grid containing the time and controls takes up way too much vertical space and the laps appear on top of them. I have only experienced this issue in safari.
