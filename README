@@ -3,6 +3,7 @@ developed by Joshua Kellogg
 This is a stopwatch. It's very straightforward, so this file will mostly be used to keep track of planned future features.
 
 UP NEXT:
+-Make the stopwatch actually accurate
 -I like the minimal look but it is a *little bit* ugly. I would like to make it fancier and possibly add support for color theming.
 FUTURE:
 -List laps by the time passed between them instead of the overall time at which they ended
