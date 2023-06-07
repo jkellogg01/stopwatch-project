@@ -7,6 +7,7 @@
 
 :root{
   font-size: 1rem;
+  --clr-primary-bg: hsl(240 67% 94%);
 }
 
 body,
@@ -14,19 +15,25 @@ button {
   font-family: 'Courier New', Courier, monospace;
 }
 
+@media (max-width: 375px) {
+  :root {
+    font-size: .75rem;
+  }
+}
+
 @media (min-width: 600px) {
   :root {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
 @media (min-width: 1000px) {
   :root {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 2500px) {
   :root {
     font-size: 4rem;
   }
@@ -35,27 +42,45 @@ button {
 .center-layout {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 2rem;
+  align-items: stretch;
+  padding: 1rem;
+  gap: 1rem;
 }
 
-.button-grid {
+.button-display-grid {
   display: inline-grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  padding: 1rem;
   align-items: center;
+}
+
+.button-display-grid button {
+  background-color: var(--clr-primary-bg);
+  font-size: 1rem;
+  padding: 1em;
 }
 
 .time {
   grid-column: span 2;
   font-size: 4rem;
+  background-color: var(--clr-primary-bg);
+  height: 100%;
+  padding-inline: .25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button-grid button {
+/* .laps {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
   font-size: 1rem;
-  padding: 1em;
-}
+  gap: 1em;
+  overflow: hidden;
+} */
 
 .laps {
   display: grid;
@@ -65,10 +90,27 @@ button {
   gap: 1em;
 }
 
-.lap-name {
-  text-align: right;
+.lap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1em;
+  background-color: var(--clr-primary-bg);
+  padding-block: 1em;
+  width: 100%;
 }
 
-.lap-time {
-  text-align: left;
+@media (min-width: 750px) {
+  .button-display-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .time {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .laps {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
