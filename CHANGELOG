@@ -1,6 +1,6 @@
-006 JUN 2023 - 20:26 - Version 2, I suppose?
+06 JUN 2023 - 20:26 - Version 2, I suppose?
 - The stopwatch works now.
-006 JUN 2023 - 20:46 - Version 3
+06 JUN 2023 - 20:46 - Version 3
 - Laps now display how long the lap was instead of the time at which they ended, as you might expect from a stopwatch.
 06 JUN 2023 - 23:22 - Version 4
 - Reformatted changelog to be even more pretentious
@@ -8,3 +8,4 @@
 - Safari appears to not get along with the current iteration. Investigating.
 07 JUN 2023 - 00:06 - Version 4a
 - Made a change that will hopefully resolve the safari display issues. I am tired and don't have safari on the machine I'm working on so I'm going to bed and I'll find out if the problem has been resolved tomorrow.
+- It still doesn't work on safari. I'll do some research tomorrow but if by some cosmic grace you're reading this and know why this doesn't work on safari at the moment I would greatly appreciate your input.
