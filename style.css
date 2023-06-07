@@ -39,19 +39,18 @@ button {
   }
 }
 
-.center-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  gap: 1rem;
+.center-layout > div {
+  padding-inline: 1rem;
 }
 
 .button-display-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  width: 100%;
+  position: sticky;
+  top: 0;
+  padding-block: 1rem;
+  background-color: white;
 }
 
 .button-display-grid button {
@@ -71,21 +70,10 @@ button {
   align-items: center;
 }
 
-/* .laps {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-  font-size: 1rem;
-  gap: 1em;
-  overflow: hidden;
-} */
-
 .laps {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
+  /* width: 100%; */
   font-size: 1rem;
   gap: 1em;
 }
