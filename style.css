@@ -42,16 +42,16 @@ button {
 .center-layout {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   padding: 1rem;
   gap: 1rem;
 }
 
 .button-display-grid {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  align-items: center;
+  width: 100%;
 }
 
 .button-display-grid button {
