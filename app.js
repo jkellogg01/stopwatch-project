@@ -10,9 +10,9 @@ renderTime()
 toggleButtonElement.addEventListener('click', () => {
   if (!stopwatchRunning) {
     intervalID = setInterval(() => {
-      time++;
+      time += 10;
       renderTime();
-    }, 1)
+    }, 10)
     stopwatchRunning = true;
   } else {
     clearInterval(intervalID);
