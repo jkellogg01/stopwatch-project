@@ -10,10 +10,12 @@ toggleButtonElement.addEventListener('click', () => {
       renderTime();
     }, 10)
     toggleButtonElement.innerHTML = "Stop";
+    lapResetButtonElement.innerHTML = "Lap";
     stopwatchRunning = true;
   } else {
     clearInterval(intervalID);
     toggleButtonElement.innerHTML = "Start";
+    lapResetButtonElement.innerHTML = "Reset";
     stopwatchRunning = false;
   }
 })
