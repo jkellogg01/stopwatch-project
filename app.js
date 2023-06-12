@@ -1,7 +1,13 @@
 const timeElement = document.querySelector('.js-time')
 const toggleButtonElement = document.querySelector('.js-toggle-button')
 const lapResetButtonElement = document.querySelector('.js-lap-reset-button')
-
+let stopwatchRunning = false
+toggleButtonElement.innerHTML = "Start";
+lapResetButtonElement.innerHTML = "Reset";
+let intervalID
+let time = 0
+let laps = []
+renderTime()
 
 toggleButtonElement.addEventListener('click', () => {
   if (!stopwatchRunning) {
@@ -75,13 +81,4 @@ function renderLaps() {
     </div>`
   })
   document.querySelector('.laps').innerHTML = HTML;
-}
-
-function pageInit() {
-  let stopwatchRunning = false
-  toggleButtonElement.innerHTML = "Start";
-  let intervalID
-  let time = 0
-  let laps = []
-  renderTime()
 }
