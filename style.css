@@ -57,6 +57,7 @@ button {
   background-color: var(--clr-primary-bg);
   font-size: 1rem;
   padding: 1em;
+  color: black;
 }
 
 .time {
