@@ -7,7 +7,7 @@ This is a single-page stopwatch app I created as an exercise in design and in we
 
 ## Installation
 
-N/A
+If you can read this, I have some *fantastic* news for you about the software you'll need to run this application.
 
 ## Usage
 
